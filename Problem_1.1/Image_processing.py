@@ -1,27 +1,27 @@
+import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Function to calculate the derivative using finite differences
-def finite_differences_derivative(f, x, h):
-    return (f(x + h) - f(x)) / h
+# Read the image
+image = cv2.imread('Problem_1.1/image.jpg', cv2.IMREAD_COLOR)
+image2 = cv2.imread('Problem_1.1/car.jpg', cv2.IMREAD_COLOR)
+# Apply Gaussian blur to reduce noise
+blurred = cv2.GaussianBlur(image, (5, 5), 0, 9)
+blurred2 = cv2.GaussianBlur(image2, (5, 5), 0, 9)
 
-# Example function
-def example_function(x):
-    return np.sin(x)
+# Perform Canny edge detection
+edges = cv2.Canny(blurred, 100, 200)
+edges2 = cv2.Canny(blurred2, 100, 200)
 
-# Define the interval and step size
-x = np.linspace(0, 2*np.pi, 100)
-h = x[1] - x[0]
+# Display the original image and the detected edges
+plt.subplot(121), plt.imshow(image)
+plt.title('Original Image'), plt.xticks([]), plt.yticks([])
+plt.subplot(122), plt.imshow(edges, cmap='gist_yarg')
+plt.title('Edge Detection'), plt.xticks([]), plt.yticks([])
 
-# Calculate the derivative using finite differences
-derivative = finite_differences_derivative(example_function, x, h)
+plt.subplot(121), plt.imshow(image2)
+plt.title('Original Image'), plt.xticks([]), plt.yticks([])
+plt.subplot(122), plt.imshow(edges2, cmap='gray')
+plt.title('Edge Detection'), plt.xticks([]), plt.yticks([])
 
-# Plot the original function and its derivative
-plt.plot(x, example_function(x), label='Original Function')
-plt.plot(x, derivative, label='Derivative')
-plt.legend()
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Function and its Derivative')
-plt.grid(True)
 plt.show()
