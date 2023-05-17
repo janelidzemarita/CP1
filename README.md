@@ -21,12 +21,12 @@ Consider
  Problem 1.3
  Computing derivatives on cubed sphere (4 points)
  1.  Construct cubed sphere mesh.
- 2.  Considerf(x,y,z) on a sphere.  Which derivatives offcan youcompute on cubed sphere using function values in nodal points only?
- 3.  Define stencil and consider linear combination of function values.  Doesit converge when grid spacing vanishes?
- 4.  Test:  Demonstrate convergence of selected formula to derivatives asmesh spacing vanishes.  Visualize.
+ 2.  Consider f(x,y,z) on a sphere.  Which derivatives off can you compute on cubed sphere using function values in nodal points only?
+ 3.  Define stencil and consider linear combination of function values.  Does it converge when grid spacing vanishes?
+ 4.  Test:  Demonstrate convergence of selected formula to derivatives as mesh spacing vanishes.  Visualize.
 
 Problem 1.4
 Speed detection from video (4 points)
-1.  Using edge detection and FD derivative filters considered in previoustasks is mandatory
-2.  Develop speed detector, describe your approach and test.  Estimateaccuracy of your approach.
+1.  Using edge detection and FD derivative filters considered in previous tasks is mandatory
+2.  Develop speed detector, describe your approach and test.  Estimate accuracy of your approach.
 3.  Test:  your code should work properly on a video provided by TA.
