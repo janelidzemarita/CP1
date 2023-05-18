@@ -1,4 +1,4 @@
-## [Cubed Sphere](CubedSphere.py)
+## [Cubed Sphere Mesh](CubedSphere.py)
 Given a point (x, y, z) on the unit cube where -1 ≤ x, y, z ≤ 1:
 
 Determine the face of the cube the point lies on based on its maximum absolute coordinate value. The six faces of the cube are: +X, -X, +Y, -Y, +Z, -Z.
@@ -18,3 +18,5 @@ The resulting (x', y', z') coordinates will lie on the unit sphere and form a cu
 Note: The above representation assumes a unit cube, but the scaling and positioning of the cube can be adjusted as needed.
 
 ![screenshot](img.png)
+
+# Not Finished
