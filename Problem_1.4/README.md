@@ -1,6 +1,13 @@
 ### [**SpeedDetection.py**](SpeedDetection.py)
     This code detects a car in a video frame using pre-trained car detection model (Haar cascade).
     Does not use edge detection and FD derivative filters. 
+    
+![Screenshot](img.png)
+![Screenshot](img_1.png)
+![Screenshot](img_2.png)
+![Screenshot](img_3.png)
+
+
 
 ### *How it works*
 
@@ -53,5 +60,8 @@
 
 > * for exit press: q
 > * Value for distance covered by the car is given: 300 m 
-  
+> * Works slower than the previous code
+
+![Screenshot](img_4.png)
+
 
